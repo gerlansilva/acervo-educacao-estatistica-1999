@@ -53,6 +53,14 @@ const authorFallbacks = {
   "posters/tema1art1.html": ["Mariela B. Cravero", "Pamela L. Martínez Fernández", "Roberto Meyer", "María Inés Rodríguez"],
 };
 
+const missingIndexWorks = {
+  artigo: [{
+    rawPath: "pasta4/art3p4.html",
+    title: "Experiências Metodológicas no Ensino de Análise Exploratória de Dados na América Latina",
+    insertAfter: "pasta4/art2p4.html",
+  }],
+};
+
 let allWorks = [];
 let activeType = "todos";
 
@@ -62,15 +70,19 @@ function normalizePath(path) {
   return decoded;
 }
 
-async function readLatin1(path) {
+async function readText(path) {
   const response = await fetch(sourceBase + path);
   if (!response.ok) throw new Error(`Não foi possível carregar ${path}`);
   const buffer = await response.arrayBuffer();
-  return new TextDecoder("windows-1252").decode(buffer);
+  try {
+    return new TextDecoder("utf-8", { fatal: true }).decode(buffer);
+  } catch {
+    return new TextDecoder("windows-1252").decode(buffer);
+  }
 }
 
 async function parseDocument(path) {
-  return new DOMParser().parseFromString(await readLatin1(path), "text/html");
+  return new DOMParser().parseFromString(await readText(path), "text/html");
 }
 
 function cleanText(value) {
@@ -111,12 +123,19 @@ function assignThemes(items, source) {
 
 async function loadCategory(source, authorMap) {
   const doc = await parseDocument(source.file);
-  const items = [...doc.querySelectorAll("a[href]")]
+  let items = [...doc.querySelectorAll("a[href]")]
     .map((anchor) => ({
       rawPath: anchor.getAttribute("href") || "",
       title: cleanText(anchor.textContent || ""),
     }))
-    .filter((item) => item.title && item.rawPath.startsWith(source.prefix))
+    .filter((item) => item.title && item.rawPath.startsWith(source.prefix));
+
+  (missingIndexWorks[source.type] || []).forEach((missing) => {
+    const after = items.findIndex((item) => normalizePath(item.rawPath) === missing.insertAfter);
+    items.splice(after >= 0 ? after + 1 : items.length, 0, missing);
+  });
+
+  items = items
     .map((item) => {
       const path = normalizePath(item.rawPath);
       return {

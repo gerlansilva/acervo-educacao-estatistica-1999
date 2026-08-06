@@ -1,0 +1,25 @@
+ATUALIZAÇÃO DO ACERVO — CONFERÊNCIA INTERNACIONAL DE 1999
+
+1. Abra a pasta local do repositório acervo-educacao-estatistica-1999.
+2. Substitua index.html, styles.css e app.js pelos arquivos desta atualização.
+3. Substitua a pasta acervo-original pela pasta acervo-original desta atualização.
+4. Copie inventario-imagens.csv para a raiz do repositório.
+5. Não apague a pasta downloads que já existe no seu repositório.
+6. No GitHub Desktop, faça o commit e depois Push origin.
+
+Principais correções desta versão:
+- leitura UTF-8 do catálogo;
+- catálogo completo com 61 trabalhos;
+- inclusão do artigo existente no acervo mas omitido do índice temático original;
+- 127 autores únicos distribuídos por 9 países de afiliação;
+- distinção entre autoria dos trabalhos e presença física no evento;
+- tratamento transparente de imagens ausentes, sem recriar figuras científicas;
+- inventário de 201 imagens referenciadas: 96 recuperadas e 105 não recuperadas;
+- indicação visual, dentro dos trabalhos, quando uma figura não foi preservada.
+
+Critério dos países:
+O país representa a afiliação ou localização institucional informada no próprio
+trabalho, e não a nacionalidade do autor. Foram considerados todos os 61 trabalhos,
+inclusive os sete registrados como não apresentados. Variantes nominais evidentes
+foram reunidas. Em divergências entre o índice e a página do trabalho, prevaleceu a
+informação presente na página do próprio trabalho.
