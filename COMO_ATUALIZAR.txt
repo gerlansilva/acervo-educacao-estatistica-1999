@@ -13,6 +13,7 @@ Principais correções desta versão:
 - inclusão do artigo existente no acervo mas omitido do índice temático original;
 - 126 autores únicos distribuídos por 9 países de afiliação, com relação nominal por país;
 - nova identidade visual editorial: fundo verde-petróleo escuro, papel marfim, acento cobre e tipografia Spectral + IBM Plex Sans;
+- imagem de abertura original das atas (fundo1.jpg) integrada em destaque à página inicial moderna, com ligação para a página histórica preservada;
 - distinção entre autoria dos trabalhos e presença física no evento;
 - tratamento transparente de imagens ausentes, sem recriar figuras científicas;
 - inventário de 201 imagens referenciadas: 99 recuperadas e 102 não recuperadas;
