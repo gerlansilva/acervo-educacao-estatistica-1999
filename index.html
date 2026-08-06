@@ -122,6 +122,17 @@
   .bar-count{font-family:'IBM Plex Mono'; font-weight:500; text-align:right; font-variant-numeric: tabular-nums; color:var(--ink-soft); font-size:0.9rem;}
   .bar-sub{grid-column:1/-1; font-size:0.82rem; color:var(--ink-faint); margin-top:-4px; max-width:60ch;}
 
+  /* ---------- word cloud ---------- */
+  .cloud-wrap{margin-top:34px; border-top:1px solid var(--ink); border-bottom:1px solid var(--ink); padding:22px 0 26px;}
+  .cloud-head{display:flex; align-items:baseline; justify-content:space-between; gap:18px; margin-bottom:18px;}
+  .cloud-title{font-family:'IBM Plex Mono'; font-size:0.68rem; letter-spacing:0.07em; text-transform:uppercase; color:var(--ink-faint);}
+  .cloud-hint{font-family:'IBM Plex Mono'; font-size:0.64rem; color:var(--ink-faint);}
+  .word-cloud{min-height:190px; display:flex; flex-wrap:wrap; align-content:center; align-items:baseline; justify-content:center; gap:9px 16px; padding:14px 18px; background:rgba(228,229,213,.52);}
+  .word-cloud span{font-family:'Space Grotesk'; font-weight:600; line-height:1; color:var(--accent); font-size:var(--cloud-size,1rem); opacity:var(--cloud-opacity,.82); letter-spacing:-.025em; cursor:default;}
+  .word-cloud span:nth-child(4n+2){color:var(--accent-dark);}
+  .word-cloud span:nth-child(5n){color:var(--ink-soft);}
+  .word-cloud-loading{font-family:'IBM Plex Mono'; font-size:.72rem; color:var(--ink-faint); align-self:center;}
+
   /* ---------- access list ---------- */
   .access-list{margin-top:30px; display:flex; flex-direction:column;}
   .access-row{
@@ -198,6 +209,13 @@
   }
   .filter:hover,.filter.active{background:var(--ink); border-color:var(--ink); color:var(--paper);}
   .catalog-status{margin-left:auto; font:0.72rem 'IBM Plex Mono', monospace; color:var(--ink-faint);}
+  .catalog-shortcuts{display:grid; grid-template-columns:repeat(4,1fr); margin-top:28px; border-top:1px solid var(--ink); border-bottom:1px solid var(--ink);}
+  .catalog-shortcut{min-height:82px; padding:13px 12px; border-left:1px solid var(--line); color:var(--ink); text-decoration:none; display:flex; flex-direction:column; justify-content:space-between; gap:10px;}
+  .catalog-shortcut:first-child{border-left:none;}
+  .catalog-shortcut:hover{background:var(--accent-soft);}
+  .catalog-shortcut span{font:0.61rem 'IBM Plex Mono', monospace; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-faint);}
+  .catalog-shortcut strong{font-family:'Space Grotesk'; font-size:.88rem; font-weight:500; line-height:1.2;}
+  .catalog-shortcut:hover strong{color:var(--accent);}
   .works{margin-top:26px; border-top:1px solid var(--ink);}
   .work{display:block; padding:19px 0 20px; border-bottom:1px solid var(--line); color:var(--ink); text-decoration:none;}
   .work:hover h3{color:var(--accent);}
@@ -234,6 +252,9 @@
     .record-links{justify-content:flex-start;}
     .method-grid{grid-template-columns:1fr;}
     .catalog-status{width:100%; margin:2px 0 0;}
+    .catalog-shortcuts{grid-template-columns:repeat(2,1fr);}
+    .catalog-shortcut:nth-child(3){border-left:none; border-top:1px solid var(--line);}
+    .catalog-shortcut:nth-child(4){border-top:1px solid var(--line);}
     nav{display:none;}
   }
 </style>
@@ -250,8 +271,8 @@
       <a href="#comissao">Comissão</a>
       <a href="#temas">Temas</a>
       <a href="#paises">Países</a>
+      <a href="#programa">Programa</a>
       <a href="#catalogo">Trabalhos</a>
-      <a href="#acesso">Acesso</a>
     </nav>
   </div>
 
@@ -392,6 +413,12 @@
       <div class="bar-row"><div class="bar-label">Análise</div><div class="bar-track"><div class="bar-fill" style="width:7%"></div></div><div class="bar-count">3</div></div>
     </div>
     <p class="method-note">Contagem sobre os 61 títulos originais (artigos, comunicações e pôsteres), ignorando artigos e preposições. Palavras equivalentes em português e espanhol foram somadas na mesma barra (ex.: estatística/estadística, ensino/enseñanza) — o acervo é bilíngue e os dois idiomas descrevem o mesmo campo.</p>
+    <div class="cloud-wrap">
+      <div class="cloud-head"><div class="cloud-title">Nuvem dos títulos</div><div class="cloud-hint">tamanho = frequência</div></div>
+      <div class="word-cloud" id="wordCloud" aria-label="Nuvem das palavras mais frequentes nos títulos dos 61 trabalhos">
+        <span class="word-cloud-loading">Calculando a partir dos 61 títulos…</span>
+      </div>
+    </div>
   </section>
 
   <section class="block" id="paises">
@@ -493,6 +520,12 @@
     <div class="eyebrow">Catálogo · 61 trabalhos</div>
     <h2>Pesquisar no conjunto das atas</h2>
     <p class="body-text">Busca por título, autoria ou eixo temático. O resultado aponta diretamente para o documento histórico preservado.</p>
+    <div class="catalog-shortcuts" aria-label="Índices e download do acervo">
+      <a class="catalog-shortcut" href="acervo-original/tema.htm"><span>Índice original ↗</span><strong>Artigos por tema</strong></a>
+      <a class="catalog-shortcut" href="acervo-original/temacomunic.htm"><span>Índice original ↗</span><strong>Comunicações por tema</strong></a>
+      <a class="catalog-shortcut" href="acervo-original/temaposter.htm"><span>Índice original ↗</span><strong>Pôsteres por tema</strong></a>
+      <a class="catalog-shortcut" href="downloads/acervo-completo.zip"><span>Download ↓</span><strong>Acervo completo (.zip)</strong></a>
+    </div>
     <div class="catalog-tools">
       <label for="search" class="eyebrow" style="margin:0;">Busca no catálogo</label>
       <input class="searchbox" id="search" type="search" placeholder="Ex.: probabilidade, Batanero, currículo…" autocomplete="off">
@@ -505,49 +538,6 @@
       </div>
     </div>
     <div class="works" id="works"><p class="empty">Carregando os índices originais…</p></div>
-  </section>
-
-  <section class="block" id="acesso" style="border-bottom:none;">
-    <div class="eyebrow">Acesso ao acervo</div>
-    <h2>Documentos do encontro</h2>
-    <div class="access-list">
-      <a class="access-row" href="acervo-original/tema.htm">
-        <div class="access-title">Artigos por tema</div>
-        <div style="display:flex; align-items:center; gap:14px;"><span class="access-tag">Índice original</span><span class="arrow">→</span></div>
-      </a>
-      <a class="access-row" href="acervo-original/temacomunic.htm">
-        <div class="access-title">Comunicações por tema</div>
-        <div style="display:flex; align-items:center; gap:14px;"><span class="access-tag">Índice original</span><span class="arrow">→</span></div>
-      </a>
-      <a class="access-row" href="acervo-original/temaposter.htm">
-        <div class="access-title">Pôsteres por tema</div>
-        <div style="display:flex; align-items:center; gap:14px;"><span class="access-tag">Índice original</span><span class="arrow">→</span></div>
-      </a>
-      <a class="access-row" href="acervo-original/conf.htm">
-        <div class="access-title">Conferência — registro original</div>
-        <div style="display:flex; align-items:center; gap:14px;"><span class="access-tag">Programação</span><span class="arrow">→</span></div>
-      </a>
-      <a class="access-row" href="acervo-original/minicurso.htm">
-        <div class="access-title">Minicurso — registro original</div>
-        <div style="display:flex; align-items:center; gap:14px;"><span class="access-tag">Programação</span><span class="arrow">→</span></div>
-      </a>
-      <a class="access-row" href="acervo-original/mesa/mesa.html">
-        <div class="access-title">Mesas-redondas e intervenções</div>
-        <div style="display:flex; align-items:center; gap:14px;"><span class="access-tag">Registros</span><span class="arrow">→</span></div>
-      </a>
-      <a class="access-row" href="acervo-original/PRESTA_Conf/index.htm">
-        <div class="access-title">Apresentação PRESTA</div>
-        <div style="display:flex; align-items:center; gap:14px;"><span class="access-tag">Slides</span><span class="arrow">→</span></div>
-      </a>
-      <a class="access-row" href="inventario-imagens.csv">
-        <div class="access-title">Inventário de imagens preservadas e ausentes</div>
-        <div style="display:flex; align-items:center; gap:14px;"><span class="access-tag">CSV</span><span class="arrow">→</span></div>
-      </a>
-      <a class="access-row" href="downloads/acervo-completo.zip">
-        <div class="access-title">Acervo completo (.zip)</div>
-        <div style="display:flex; align-items:center; gap:14px;"><span class="access-tag">Download</span><span class="arrow">→</span></div>
-      </a>
-    </div>
   </section>
 
   <section class="block" id="integridade">
@@ -589,6 +579,6 @@
   </footer>
 
 </div>
-<script src="app.js"></script>
+<script src="app.js?v=20260806-2"></script>
 </body>
 </html>
