@@ -131,6 +131,8 @@ async function loadCategory(source, authorMap) {
     .filter((item) => item.title && item.rawPath.startsWith(source.prefix));
 
   (missingIndexWorks[source.type] || []).forEach((missing) => {
+    const alreadyIndexed = items.some((item) => normalizePath(item.rawPath) === missing.rawPath);
+    if (alreadyIndexed) return;
     const after = items.findIndex((item) => normalizePath(item.rawPath) === missing.insertAfter);
     items.splice(after >= 0 ? after + 1 : items.length, 0, missing);
   });
@@ -153,6 +155,58 @@ function escapeHTML(value) {
   const div = document.createElement("div");
   div.textContent = value;
   return div.innerHTML;
+}
+
+function foldWord(value) {
+  return value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase("pt-BR");
+}
+
+function renderWordCloud() {
+  const container = document.querySelector("#wordCloud");
+  if (!container || !allWorks.length) return;
+
+  const stopwords = new Set([
+    "a", "as", "ao", "aos", "com", "como", "da", "das", "de", "do", "dos", "e", "em", "entre", "na", "nas", "no", "nos", "o", "os", "ou", "para", "por", "sobre", "um", "uma",
+    "al", "con", "como", "del", "el", "en", "entre", "la", "las", "los", "para", "por", "sobre", "un", "una", "y",
+    "a", "an", "and", "for", "in", "of", "on", "the", "to", "with"
+  ]);
+  const equivalents = {
+    estadistica: "estatistica", estadistico: "estatistico", estadisticos: "estatisticos",
+    ensenanza: "ensino", probabilidad: "probabilidade", formacion: "formacao",
+    educacion: "educacao", investigacion: "pesquisa"
+  };
+  const preferredLabels = {
+    estatistica: "Estatística", estatistico: "Estatístico", estatisticos: "Estatísticos",
+    ensino: "Ensino", probabilidade: "Probabilidade", formacao: "Formação",
+    educacao: "Educação", pesquisa: "Pesquisa"
+  };
+  const counts = new Map();
+  const labels = new Map();
+
+  allWorks.forEach((work) => {
+    const words = work.title.match(/[\p{L}]+/gu) || [];
+    words.forEach((original) => {
+      let key = foldWord(original);
+      if (stopwords.has(key) || key.length < 4) return;
+      key = equivalents[key] || key;
+      counts.set(key, (counts.get(key) || 0) + 1);
+      if (!labels.has(key)) labels.set(key, preferredLabels[key] || original);
+    });
+  });
+
+  const terms = [...counts.entries()]
+    .filter(([, count]) => count >= 2)
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "pt-BR"))
+    .slice(0, 32);
+  const max = Math.max(...terms.map(([, count]) => count), 1);
+  const min = Math.min(...terms.map(([, count]) => count), max);
+
+  container.innerHTML = terms.map(([key, count]) => {
+    const ratio = max === min ? 1 : (Math.sqrt(count) - Math.sqrt(min)) / (Math.sqrt(max) - Math.sqrt(min));
+    const size = (0.82 + ratio * 1.9).toFixed(2);
+    const opacity = (0.58 + ratio * 0.42).toFixed(2);
+    return `<span style="--cloud-size:${size}rem;--cloud-opacity:${opacity}" title="${count} ocorrência${count === 1 ? "" : "s"}">${escapeHTML(labels.get(key))}</span>`;
+  }).join("");
 }
 
 function render() {
@@ -186,15 +240,18 @@ async function init() {
   try {
     const authorMap = await loadAuthors();
     const categories = await Promise.all(categorySources.map((source) => loadCategory(source, authorMap)));
-    allWorks = categories.flat();
+    allWorks = [...new Map(categories.flat().map((work) => [work.path, work])).values()];
     if (allWorks.length !== 61) {
       throw new Error(`Os índices retornaram ${allWorks.length} trabalhos; eram esperados 61.`);
     }
     render();
+    renderWordCloud();
   } catch (error) {
     console.error(error);
     document.querySelector("#catalogStatus").textContent = "Falha ao carregar o catálogo";
     document.querySelector("#works").innerHTML = '<p class="empty">Os índices originais não puderam ser carregados. Use os links da seção “Fonte primária” acima.</p>';
+    const cloud = document.querySelector("#wordCloud");
+    if (cloud) cloud.innerHTML = '<span class="word-cloud-loading">Não foi possível calcular a nuvem automaticamente.</span>';
   }
 }
 
