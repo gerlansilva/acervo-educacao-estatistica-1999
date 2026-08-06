@@ -11,10 +11,12 @@ Principais correções desta versão:
 - leitura UTF-8 do catálogo;
 - catálogo completo com 61 trabalhos;
 - inclusão do artigo existente no acervo mas omitido do índice temático original;
-- 127 autores únicos distribuídos por 9 países de afiliação;
+- 126 autores únicos distribuídos por 9 países de afiliação, com relação nominal por país;
+- nova identidade visual editorial: fundo verde-petróleo escuro, papel marfim, acento cobre e tipografia Spectral + IBM Plex Sans;
 - distinção entre autoria dos trabalhos e presença física no evento;
 - tratamento transparente de imagens ausentes, sem recriar figuras científicas;
-- inventário de 201 imagens referenciadas: 96 recuperadas e 105 não recuperadas;
+- inventário de 201 imagens referenciadas: 99 recuperadas e 102 não recuperadas;
+- recuperação documental de img016.JPG, img030.JPG e img035.JPG a partir dos slides correspondentes do PowerPoint original PRESTA;
 - indicação visual, dentro dos trabalhos, quando uma figura não foi preservada.
 
 Critério dos países:
@@ -23,3 +25,8 @@ trabalho, e não a nacionalidade do autor. Foram considerados todos os 61 trabal
 inclusive os sete registrados como não apresentados. Variantes nominais evidentes
 foram reunidas. Em divergências entre o índice e a página do trabalho, prevaleceu a
 informação presente na página do próprio trabalho.
+
+Nota de revisão nominal:
+A contagem anterior de 127 incluía duas grafias de Ely Francina Tannuri de Oliveira
+como se fossem pessoas distintas. A revisão consolidou o registro e corrigiu o total
+para 126 autores (Brasil: 57).
