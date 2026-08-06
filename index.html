@@ -209,13 +209,6 @@
   }
   .filter:hover,.filter.active{background:var(--ink); border-color:var(--ink); color:var(--paper);}
   .catalog-status{margin-left:auto; font:0.72rem 'IBM Plex Mono', monospace; color:var(--ink-faint);}
-  .catalog-shortcuts{display:grid; grid-template-columns:repeat(4,1fr); margin-top:28px; border-top:1px solid var(--ink); border-bottom:1px solid var(--ink);}
-  .catalog-shortcut{min-height:82px; padding:13px 12px; border-left:1px solid var(--line); color:var(--ink); text-decoration:none; display:flex; flex-direction:column; justify-content:space-between; gap:10px;}
-  .catalog-shortcut:first-child{border-left:none;}
-  .catalog-shortcut:hover{background:var(--accent-soft);}
-  .catalog-shortcut span{font:0.61rem 'IBM Plex Mono', monospace; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-faint);}
-  .catalog-shortcut strong{font-family:'Space Grotesk'; font-size:.88rem; font-weight:500; line-height:1.2;}
-  .catalog-shortcut:hover strong{color:var(--accent);}
   .works{margin-top:26px; border-top:1px solid var(--ink);}
   .work{display:block; padding:19px 0 20px; border-bottom:1px solid var(--line); color:var(--ink); text-decoration:none;}
   .work:hover h3{color:var(--accent);}
@@ -252,9 +245,6 @@
     .record-links{justify-content:flex-start;}
     .method-grid{grid-template-columns:1fr;}
     .catalog-status{width:100%; margin:2px 0 0;}
-    .catalog-shortcuts{grid-template-columns:repeat(2,1fr);}
-    .catalog-shortcut:nth-child(3){border-left:none; border-top:1px solid var(--line);}
-    .catalog-shortcut:nth-child(4){border-top:1px solid var(--line);}
     nav{display:none;}
   }
 </style>
@@ -273,6 +263,7 @@
       <a href="#paises">Países</a>
       <a href="#programa">Programa</a>
       <a href="#catalogo">Trabalhos</a>
+      <a href="#fontes">Fontes</a>
     </nav>
   </div>
 
@@ -283,7 +274,7 @@
     <p class="lede">Acervo digital da conferência internacional realizada na UFSC — trabalhos, autores e testemunhos que documentam a constituição da Educação Estatística na América Latina.</p>
     <div class="cta-row">
       <a class="btn btn-primary" href="#catalogo">Explorar os trabalhos</a>
-      <a class="btn btn-secondary" href="downloads/acervo-completo.zip">Baixar acervo completo</a>
+      <a class="btn btn-secondary" href="#fontes">Consultar fontes originais</a>
     </div>
   </section>
 
@@ -520,12 +511,6 @@
     <div class="eyebrow">Catálogo · 61 trabalhos</div>
     <h2>Pesquisar no conjunto das atas</h2>
     <p class="body-text">Busca por título, autoria ou eixo temático. O resultado aponta diretamente para o documento histórico preservado.</p>
-    <div class="catalog-shortcuts" aria-label="Índices e download do acervo">
-      <a class="catalog-shortcut" href="acervo-original/tema.htm"><span>Índice original ↗</span><strong>Artigos por tema</strong></a>
-      <a class="catalog-shortcut" href="acervo-original/temacomunic.htm"><span>Índice original ↗</span><strong>Comunicações por tema</strong></a>
-      <a class="catalog-shortcut" href="acervo-original/temaposter.htm"><span>Índice original ↗</span><strong>Pôsteres por tema</strong></a>
-      <a class="catalog-shortcut" href="downloads/acervo-completo.zip"><span>Download ↓</span><strong>Acervo completo (.zip)</strong></a>
-    </div>
     <div class="catalog-tools">
       <label for="search" class="eyebrow" style="margin:0;">Busca no catálogo</label>
       <input class="searchbox" id="search" type="search" placeholder="Ex.: probabilidade, Batanero, currículo…" autocomplete="off">
@@ -538,6 +523,41 @@
       </div>
     </div>
     <div class="works" id="works"><p class="empty">Carregando os índices originais…</p></div>
+  </section>
+
+  <section class="block" id="fontes">
+    <div class="eyebrow">Fontes primárias</div>
+    <h2>Documentos e índices históricos</h2>
+    <p class="body-text">Esta área preserva a estrutura documental do site de 1999. Os <b>documentos</b> registram o encontro; os <b>índices</b> reproduzem as antigas portas de navegação das atas. O catálogo pesquisável acima é a interface contemporânea para consultar os 61 trabalhos.</p>
+
+    <div class="committee-group">
+      <h3>Documentos do encontro</h3>
+      <div class="access-list" style="margin-top:0;">
+        <a class="access-row" href="acervo-original/index.html"><div class="access-title">Página inicial original das atas</div><div style="display:flex; align-items:center; gap:14px;"><span class="access-tag">1999</span><span class="arrow">→</span></div></a>
+        <a class="access-row" href="acervo-original/apresen.htm"><div class="access-title">Apresentação original do encontro</div><div style="display:flex; align-items:center; gap:14px;"><span class="access-tag">Documento</span><span class="arrow">→</span></div></a>
+        <a class="access-row" href="acervo-original/organizacao.htm"><div class="access-title">Comissão organizadora e comitê avaliador</div><div style="display:flex; align-items:center; gap:14px;"><span class="access-tag">Documento</span><span class="arrow">→</span></div></a>
+        <a class="access-row" href="acervo-original/mesa/Relato_Lisbeth.html"><div class="access-title">Relato preservado sobre o evento</div><div style="display:flex; align-items:center; gap:14px;"><span class="access-tag">Relato</span><span class="arrow">→</span></div></a>
+      </div>
+    </div>
+
+    <div class="committee-group">
+      <h3>Índices originais dos trabalhos</h3>
+      <div class="access-list" style="margin-top:0;">
+        <a class="access-row" href="acervo-original/tema.htm"><div class="access-title">Artigos por tema</div><div style="display:flex; align-items:center; gap:14px;"><span class="access-tag">Índice</span><span class="arrow">→</span></div></a>
+        <a class="access-row" href="acervo-original/temacomunic.htm"><div class="access-title">Comunicações por tema</div><div style="display:flex; align-items:center; gap:14px;"><span class="access-tag">Índice</span><span class="arrow">→</span></div></a>
+        <a class="access-row" href="acervo-original/temaposter.htm"><div class="access-title">Pôsteres por tema</div><div style="display:flex; align-items:center; gap:14px;"><span class="access-tag">Índice</span><span class="arrow">→</span></div></a>
+        <a class="access-row" href="acervo-original/tituloautor.htm"><div class="access-title">Autores dos artigos</div><div style="display:flex; align-items:center; gap:14px;"><span class="access-tag">Índice</span><span class="arrow">→</span></div></a>
+        <a class="access-row" href="acervo-original/tituloautor_Comunica.htm"><div class="access-title">Autores das comunicações</div><div style="display:flex; align-items:center; gap:14px;"><span class="access-tag">Índice</span><span class="arrow">→</span></div></a>
+        <a class="access-row" href="acervo-original/tituloautor_Pôster.htm"><div class="access-title">Autores dos pôsteres</div><div style="display:flex; align-items:center; gap:14px;"><span class="access-tag">Índice</span><span class="arrow">→</span></div></a>
+      </div>
+    </div>
+
+    <div class="committee-group">
+      <h3>Pacote para preservação</h3>
+      <div class="access-list" style="margin-top:0;">
+        <a class="access-row" href="downloads/acervo-completo.zip"><div class="access-title">Baixar o acervo completo</div><div style="display:flex; align-items:center; gap:14px;"><span class="access-tag">ZIP</span><span class="arrow">↓</span></div></a>
+      </div>
+    </div>
   </section>
 
   <section class="block" id="integridade">
