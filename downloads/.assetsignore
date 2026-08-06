@@ -1,5 +1,9 @@
+.git
+.git/**
 **/.git
-**/.DS_Store
+**/.git/**
 .github
+.github/**
+**/.DS_Store
 .gitignore
 .assetsignore
