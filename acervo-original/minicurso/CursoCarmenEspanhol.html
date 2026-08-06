@@ -1,0 +1,1598 @@
+<html>
+
+<head>
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<meta NAME="GENERATOR" CONTENT="Microsoft FrontPage 3.0">
+<title>Análisis Exploratorio de Datos en la Escuela Secundaria</title>
+</head>
+
+<body>
+<div align="center"><center>
+
+<table border="1" width="100%" bgcolor="#FFFFFF" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF">
+  <tr>
+    <b><td width="19%"><font SIZE="5"><img src="../images/ponte_azul.jpg" width="127" height="83" alt="ponte_azul.jpg (74975 bytes)"></font></b></td>
+    <td width="81%"><p align="center"><big><font face="Comic Sans MS" color="#0000FF">Atas da
+    Conferência Internacional &quot;Experiências e Expectativas do Ensino de Estatística -
+    Desafios para o Século XXI&quot;</font><br>
+    </big><br>
+    <font face="Comic Sans MS" color="#0000FF"><small>Florianópolis, Santa Catarina, Brasil -
+    20 a 23 de Setembro de 1999</small></font></td>
+  </tr>
+</table>
+</center></div><b><font SIZE="5"><div align="center"><center>
+
+<address>
+  Análisis Exploratorio de Datos en la Escuela Secundaria 
+</address>
+</center></div></font><div align="center"><center>
+
+<address>
+  Prof<sup><u>a</u></sup>. <em>Carmen Batanero 
+</address>
+</center></div></em></b><font SIZE="3"><div align="center"><center>
+
+<address>
+  Dept. Didáctica de la Matemática <br>
+  University of Granada, Campus de Cartuja 
+</address>
+</center></div><i>
+
+<p ALIGN="CENTER">18071 Granada, España </p>
+</font>
+
+<p ALIGN="CENTER">&nbsp;</p>
+</i>
+
+<p ALIGN="CENTER">RESUMEN</p>
+
+<p ALIGN="JUSTIFY">El análisis exploratorio de datos, introducido Tukey (1962; 1970), se
+ha extendido como filosofía de aplicación de la estadística, debido principalmente a la
+disponibilidad de ordenadores y software estadístico con posibilidades de representación
+gráfica y tratamiento de conjuntos de datos variados. Las posibilidades didácticas del
+análisis exploratorio de datos se deben a la sencillez del aparato matemático requerido,
+la importancia dada hoy día en estadística y matemáticas a los sistemas de
+representación múltiple y resolución de problemas, las conexiones con otros temas del
+curriculum, el trabajo en equipo y la posibilidad de desarrollo de proyectos por parte de
+los alumnos (Batanero, Estepa y Godino, 1992).</p>
+
+<p ALIGN="JUSTIFY">El objetivo del taller es presentar a los profesores ejemplos de
+actividades de análisis exploratorio de datos que puedan utilizar con sus alumnos de
+secundaria. Un proyecto de análisis de datos, a partir de un fichero tomado de Internet,
+servirá para analizar los principales contenidos de análisis de datos abordables en este
+nivel de enseñanza, mostrar ejemplos de cuestiones que requieran el uso de conceptos y
+técnicas estadísticas, describir algunas dificultades previsibles de los alumnos con los
+mismos y sugerir criterios para el trabajo en clase con los alumnos. La metodología del
+taller alternará el trabajo en grupo y discusión de los profesores y profesoras y el
+resumen de algunos puntos claves por la coordinadora del taller. Se propone dividir el
+taller en dos sesiones con un breve descanso.</p>
+<font SIZE="4"><b>
+
+<p ALIGN="CENTER">1. Un ejemplo de proyecto</p>
+</b></font>
+
+<p ALIGN="JUSTIFY">La actividad se desarrolla en torno a un proyecto a partir de un
+fichero que contiene datos de 97 países y que ha sido adaptado del preparado por
+Rouncenfield (1995), quien usó como fuentes Day (1992) y U.N.E.S.C.O. (1990). Este
+fichero ha sido tomado de Internet, del servidor de Journal of Statistical Education <font SIZE="2">(http://www2.ncsu.edu/ncsu/pams/stat/info/jse/homepage.html). </font>Contiene las
+siguientes variables, que se refieren a 1990:</p>
+
+<dir>
+  <dir>
+    <i><p>Tasa de natalidad</i>: Niños nacidos vivos en el año por cada 1000 habitantes;</p>
+    <i><p>Tasa de mortalidad</i>: Número de muertes en el año por cada 1000 habitantes;<br>
+    <i>Mortalidad infantil</i>: Número de muertes en el por cada 1000 niños de menos de 1
+    año;</p>
+    <i><p>Esperanza de vida</i> al nacer para hombres y mujeres;</p>
+    <i><p>PNB</i>. Producto Nacional Bruto per cápita en dólares (USA);</p>
+    <i><p>Grupo</i>: Clasificación de países en función de la zona geográfica y situación
+    económica, en las siguientes categorías:</p>
+    <p>1 = Europa Oriental</p>
+    <p>2 = Iberoamérica</p>
+    <p>3 = Europa Occidental, Norte América, Japón, Australia, Nueva Zelanda</p>
+    <p>4 = Oriente Medio</p>
+    <p>5 = Asia</p>
+    <p>6 = Africa.</p>
+  </dir>
+</dir>
+
+<p ALIGN="JUSTIFY">Hemos añadido el número de habitantes en 1990 en miles de personas (<i>Población</i>),
+tomado del anuario publicado por el periódico español &quot;El País&quot;. A
+continuación listamos los datos:</p>
+<font SIZE="2">
+
+<p>&nbsp;</p>
+</font>
+
+<table BORDER="1" CELLSPACING="1" CELLPADDING="3" WIDTH="624">
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">País</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">Grupo</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">Tasa natalidad</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">Tasa mortalidad</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">Mortalidad infantil</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">Esperanza vida hombre</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">Esperanza vida mujer</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">PNB</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">Población (miles)</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Afganistán</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">40.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">18.7</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">181.6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">41.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">42.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">168</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">16000</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Albania</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">24.7</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">5.7</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">30.8</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">69.6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">75.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">600</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">3204</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Alemania (Oeste)</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">11.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">11.2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">7.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">71.8</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">78.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">22320</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">16691</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Alemania Este</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">12.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">12.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">7.6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">69.8</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">75.9</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">.</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">61337</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Algeria</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">35.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">8.3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">74.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">61.6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">63.3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">2060</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">24453</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Angola</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">47.2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">20.2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">137.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">42.9</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">46.1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">610</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">9694</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Arabia Saudí</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">42.1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">7.6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">71.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">61.7</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">65.2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">7050</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">13562</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Argentina</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">20.7</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">8.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">25.7</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">65.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">72.7</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">2370</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">31883</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Austria</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">14.9</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">7.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">8.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">73.3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">79.6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">17000</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">7598</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Bahrein</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">28.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">3.8</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">16.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">66.8</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">69.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">6340</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">459</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Bangladesh</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">42.2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">15.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">119.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">56.9</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">56.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">210</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">111590</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Bélgica</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">12.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">10.6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">7.9</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">70.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">76.8</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">15540</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">9886</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Bielorusia</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">15.2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">9.</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">13.1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">66.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">75.9</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">1880</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">.</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Bolivia</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">46.6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">18.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">111.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">51.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">55.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">630</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">7110</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Botswana</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">48.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">11.6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">67.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">52.3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">59.7</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">2040</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">1217</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Brasil</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">28.6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">7.9</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">63.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">62.3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">67.6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">2680</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">147294</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Bulgaria</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">12.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">11.9</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">14.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">68.3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">74.7</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">2250</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">9001</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Camboya</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">41.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">16.6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">130.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">47.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">49.9</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">.</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">8250</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Canadá</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">14.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">7.3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">7.2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">73.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">79.8</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">20470</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">26302</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Colombia</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">27.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">6.1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">40.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">63.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">69.2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">1260</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">32335</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Congo</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">46.1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">14.6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">73.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">50.1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">55.3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">1010</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">2208</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Corea (Norte)</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">23.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">18.1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">25.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">66.2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">72.7</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">400</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">21143</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Checoslovaquia</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">13.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">11.7</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">11.3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">71.8</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">77.7</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">2980</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">15641</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Chile</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">23.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">5.8</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">17.1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">68.1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">75.1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">1940</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">12980</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">China</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">21.2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">6.7</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">32.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">68.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">70.9</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">380</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">1105067</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Dinamarca</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">12.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">11.9</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">7.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">71.8</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">77.7</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">22080</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">5132</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Ecuador</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">32.9</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">7.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">63.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">63.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">67.6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">980</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">10329</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Egipto</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">38.8</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">9.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">49.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">57.8</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">60.3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">600</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">51390</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Emiratos Arabes</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">22.8</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">3.8</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">26.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">68.6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">72.9</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">19860</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">1544</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">España</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">10.7</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">8.2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">8.1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">72.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">78.6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">11020</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">39161</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Etiopía</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">48.6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">20.7</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">137.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">42.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">45.6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">120</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">48861</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Filipinas</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">33.2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">7.7</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">45.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">62.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">66.1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">730</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">61224</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Finlandia</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">13.2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">10.1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">5.8</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">70.7</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">78.7</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">26040</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">4974</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Francia</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">13.6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">9.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">7.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">72.3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">80.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">19490</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">56119</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Gabón</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">39.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">16.8</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">103.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">49.9</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">53.2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">390</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">1105</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Gambia</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">47.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">21.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">143.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">41.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">44.6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">260</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">848</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Ghana</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">44.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">13.1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">90.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">52.2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">55.8</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">390</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">14425</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Grecia</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">10.1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">9.2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">11.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">65.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">74.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">5990</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">10039</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Guayana</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">28.3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">7.3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">56.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">60.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">66.1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">330</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">95</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Holanda</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">13.2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">8.6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">7.10</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">73.3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">79.9</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">17320</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">14828</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Hong_Kong</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">11.7</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">4.9</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">6.10</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">74.3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">80.1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">14210</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">5735</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Hungría</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">11.6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">13.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">14.8</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">65.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">73.8</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">2780</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">10587</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">India</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">30.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">10.2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">91.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">52.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">52.1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">350</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">832535</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Indonesia</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">28.6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">9.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">75.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">58.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">62.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">570</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">178211</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Irán</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">42.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">11.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">108.1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">55.8</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">55.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">2490</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">50204</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Iraq</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">42.6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">7.8</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">69.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">63.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">64.8</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">3020</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">18271</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Irlanda</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">15.1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">9.1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">7.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">71.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">76.7</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">9550</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">3537</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Israel</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">22.3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">6.3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">9.7</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">73.9</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">77.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">10920</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">4525</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Italia</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">9.7</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">9.1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">8.8</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">72.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">78.6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">16830</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">57537</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Japón</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">9.9</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">6.7</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">4.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">75.9</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">81.8</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">25430</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">123045</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Jordania</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">38.9</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">6.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">44.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">64.2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">67.8</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">1240</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">4041</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Kenya</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">47.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">11.3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">72.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">56.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">60.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">370</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">23277</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Kuwait</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">26.8</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">2.</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">15.6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">71.2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">75.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">16150</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">2020</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Líbano</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">31.7</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">8.7</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">48.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">63.1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">67.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">.</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">2900</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Libia</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">44.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">9.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">82.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">59.1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">62.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">5310</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">4395</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Malasia</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">31.6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">5.6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">24.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">67.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">71.6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">2320</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">17340</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Malawi</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">48.3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">25.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">130.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">38.1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">41.2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">200</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">8230</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Marruecos</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">35.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">9.8</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">82.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">59.1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">62.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">960</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">24567</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">México</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">29.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">23.2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">43.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">62.1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">66.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">2490</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">85440</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Mongolia</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">36.1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">8.8</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">68.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">60.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">62.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">110</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">2128</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Mozambique</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">45.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">18.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">141.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">44.9</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">48.1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">80</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">15357</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Namibia</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">44.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">12.1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">135.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">55.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">57.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">1030</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">1300</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Nepal</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">39.6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">14.8</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">128.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">50.9</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">48.1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">170</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">18431</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Nigeria</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">48.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">15.6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">105.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">48.8</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">52.2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">360</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">113665</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Noruega</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">14.3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">10.7</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">7.8</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">67.2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">75.7</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">23120</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">4215</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Omán</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">45.6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">7.8</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">40.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">62.2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">65.8</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">5220</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">1486</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Pakistán</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">30.3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">8.1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">107.7</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">59.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">59.2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">380</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">109950</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Paraguay</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">34.8</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">6.6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">42.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">64.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">68.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">1110</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">4161</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Perú</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">32.9</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">8.3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">109.9</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">56.8</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">66.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">1160</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">21142</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Polonia</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">14.3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">10.2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">16.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">67.2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">75.7</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">1690</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">38061</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Portugal</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">11.9</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">9.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">13.1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">66.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">72.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">7600</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">10333</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Rumania</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">13.6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">10.7</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">26.9</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">66.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">72.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">1640</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">23148</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Sierra Leona</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">48.2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">23.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">154.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">39.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">42.6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">240</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">4040</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Singapur</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">17.8</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">5.2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">7.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">68.7</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">74.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">11160</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">2664</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Somalia</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">50.1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">20.2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">132.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">43.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">46.6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">120</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">6089</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Sri_Lanka</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">21.3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">6.2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">19.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">67.8</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">71.7</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">470</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">16779</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Sudáfrica</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">32.1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">9.9</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">72.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">57.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">63.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">2530</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">34925</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Sudán</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">44.6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">15.8</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">108.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">48.6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">51.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">480</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">24423</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Suecia</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">14.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">11.1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">5.6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">74.2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">80.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">23660</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">8485</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Suiza</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">12.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">9.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">7.1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">73.9</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">80.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">34064</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">6541</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Swazilandia</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">46.8</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">12.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">118.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">42.9</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">49.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">810</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">761</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Tailandia</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">22.3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">7.7</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">28.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">63.8</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">68.9</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">1420</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">55200</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Tanzania</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">50.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">14.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">106.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">51.3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">54.7</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">110</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">25627</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Túnez</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">31.1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">7.3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">52.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">64.9</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">66.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">1440</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">7988</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Turquía</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">29.2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">8.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">76.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">62.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">65.8</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">1630</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">54899</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">U.K.</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">13.6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">11.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">8.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">72.2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">77.9</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">16100</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">57270</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">U.S.A.</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">16.7</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">8.1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">9.1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">71.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">78.3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">21790</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">248243</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Ucrania</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">13.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">11.6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">13.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">66.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">74.8</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">1320</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">.</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Uganda</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">52.2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">15.6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">103.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">49.9</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">52.7</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">220</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">16722</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Uruguay</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">18.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">9.6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">21.9</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">68.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">74.9</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">2560</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">3067</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">URSS</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">17.7</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">10.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">23.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">64.6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">74.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">2242</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">287664</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Venezuela</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">27.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">4.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">23.3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">66.7</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">72.8</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">2560</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">19244</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Vietnam</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">31.8</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">9.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">64.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">63.7</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">67.9</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">.</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">65758</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Yugoslavia</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">14.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">9.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">20.2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">68.6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">74.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">.</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">23707</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Zaire</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">45.6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">14.2</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">83.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">50.3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">53.7</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">220</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">34442</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Zambia</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">51.1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">13.7</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">80.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">50.4</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">52.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">420</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">7837</font></td>
+  </tr>
+  <tr>
+    <td WIDTH="17%" VALIGN="TOP"><font SIZE="2">Zimbabwe</font></td>
+    <td WIDTH="8%" VALIGN="TOP"><font SIZE="2"><p ALIGN="CENTER">6</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">41.7</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">10.3</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">66.0</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">56.5</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">60.1</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">640</font></td>
+    <td WIDTH="11%" VALIGN="TOP"><font SIZE="2"><p ALIGN="RIGHT">9567</font></td>
+  </tr>
+</table>
+<b>
+
+<p ALIGN="JUSTIFY"></b>Rouncenfield (1995) presenta este proyecto sobre el cual los
+alumnos pueden trabajar en grupos, comparando las variables en los diferentes grupos de
+países y formulando por si mismos preguntas de su interés, incluso completando las
+variables del fichero cuando la solución de las preguntas así lo requiera. Mostramos a
+continuación algunos ejemplos de las posibles actividades a desarrollar en un curso de
+análisis exploratorio de datos, esperando que propicien la reflexión sobre los
+contenidos del curriculum y las dificultades previsibles de los alumnos en su proceso de
+aprendizaje. Otras actividades se sugieren en el artículo de Rouncenfield.</p>
+<b>
+
+<p ALIGN="JUSTIFY">Actividad 1. Variables: </b>La actividad inicial consiste en discutir
+el significado de las variables de este fichero y analizar como se han calculado las
+diferentes tasas: natalidad, mortalidad, esperanza de vida, PNB. Los alumnos podrían
+investigar qué otros indicadores alternativos se emplean para obtener un indicador
+demográfico o económico de la riqueza de un país. El profesor podría pedir a los
+alumnos que busquen artículos en la prensa en que se hable de alguno de estos indicadores
+y que expliquen en sus propias palabras la utilidad que pueden tener y que averigüen
+quien y como los calcula. </p>
+
+<p ALIGN="JUSTIFY">En este fichero se ha usado un código para agrupar los países en
+función de la zona geográfica y desarrollo económico Los alumnos podrían sugerir otras
+variables de clasificación de los países o añadir otras variables o países al fichero.</p>
+<b>
+
+<p ALIGN="JUSTIFY">Actividad 2. Diagramas de barras: </b>La Figura 1 muestra un diagrama
+de barras donde representamos el número de países en los diferentes grupos de países. A
+partir del mismo es fácil construir una tabla de frecuencias y discutir el significado de
+las frecuencias absolutas, relativas y porcentajes. Los alumnos pueden analizar las
+ventajas que el diagrama de barras tiene frente a la tabla para visualizar el grupo que
+tiene mayor /menor número de países. Asimismo pueden elaborar otros gráficos adecuados
+para representar esta variable.</p>
+
+<p>&nbsp;</p>
+<b>
+
+<p ALIGN="CENTER"><img SRC="Image7.gif" WIDTH="471" HEIGHT="302"></b><i></p>
+</i>
+
+<p ALIGN="CENTER"><b>Figura 1.</b> <i>Número de países por Grupo</i></p>
+<b>
+
+<p ALIGN="JUSTIFY">Actividad 3. Promedios: </b>La elaboración de una tabla o un gráfico
+ya supone una primera reducción de los datos, pero a veces queremos hallar un único
+valor representativo de la distribución. En la Figura 2 hemos representado el número
+promedio de habitantes en cada país, según grupo, usando dos promedios diferentes: media
+y mediana. </p>
+<b>
+
+<p ALIGN="CENTER"><img SRC="Image8.gif" WIDTH="332" HEIGHT="291"><img SRC="Image9.gif" WIDTH="346" HEIGHT="284"></b><i></p>
+</i>
+
+<p ALIGN="CENTER"><b>Figura 2.</b> <i>Mediana y media del número de habitantes en los
+diferentes grupos de países</i></p>
+
+<p ALIGN="JUSTIFY">La clase puede dividirse en grupos para calcular estos promedios, así
+como la moda, y para explicar lo que representa cada uno de estos promedios y elegir en
+cada grupo el que mejor lo representa, argumentando la elección. Se puede pedir a los
+alumnos que señalen las principales diferencias entre los dos gráficos y que decidan
+cuál de los dos promedios acentúa más las diferencias explicando la razón. </p>
+
+<p ALIGN="JUSTIFY">Otra pregunta para los alumnos es qué representa el valor obtenido al
+calcular la media de la esperanza media de vida al nacer en estos 97 países y cómo
+habría que hacer para calcular la esperanza media de vida al nacer en hombres y mujeres,
+si no tenemos en cuenta el país de nacimiento. Con ejemplos sencillos se podría conducir
+a los alumnos a la idea de media ponderada y hacerles ver la necesidad de tener en cuenta
+el número de hombres y mujeres de cada país, para calcular el promedio.</p>
+
+<p ALIGN="JUSTIFY">Nosotros hemos calculado la esperanza media de vida global en hombres y
+mujeres, ponderando los datos de cada país por su número de habitantes (suponiendo un
+número aproximadamente igual de hombres y mujeres ). En la Figura 3 hemos representado la
+esperanza media de vida en hombres y mujeres con dos escalas diferentes. En esta gráfica
+se pedirá a los alumnos comparar estos dos gráficos e indicar si parecen o no adecuados
+para representar la diferencia entre la esperanza media de vida de mujeres y hombres. Uno
+de los dos gráficos ha sido obtenido directamente del ordenador, mientras que el otro ha
+sido manipulado. Los alumnos deben averiguar cuál ha sido manipulado.</p>
+<b>
+
+<p ALIGN="JUSTIFY"><img SRC="Image10.gif" WIDTH="302" HEIGHT="265"><img SRC="Image11.gif" WIDTH="291" HEIGHT="269"></b> </p>
+<b>
+
+<p ALIGN="CENTER">Figura 3</b>. <i>Esperanza de vida media en hombres y mujere</i>s</p>
+<b>
+
+<p ALIGN="JUSTIFY">Actividad 4</b>. <b>La tasa de natalidad. </b>En esta actividad
+estudiaremos la distribución de las tasas de natalidad Podemos plantear preguntas tales
+como ¿Por qué en este caso conviene agrupar en intervalos? ¿Qué representa la
+frecuencia dentro de un intervalos? ¿Cuántos intervalos conviene usar en la tabla de
+frecuencias? ¿Cómo representaría gráficamente estos datos? ¿Es simétrica la
+distribución? ¿Cómo cambia la forma al variar el número de intervalos? ¿Y si usamos
+intervalos de distinta amplitud? ¿Qué representa y cómo representaría la frecuencia
+acumulada? ¿Qué posición ocupa mi país respecto a la tasa de natalidad? ¿Hay algunos
+países atípicos respecto a la tasa de natalidad? Para contestar esta y otras preguntas
+similares podemos usar el gráfico del tallo y hojas (Figura 4).</p>
+<b>
+
+<p ALIGN="CENTER">Figura 4</b>. <i>Gráfico de tallo y hojas: Tasa de natalidad</p>
+</i><font FACE="Courier New" SIZE="2">
+
+<p>0|99<br>
+1|001111222223333333444444<br>
+1|556778<br>
+2|011222334<br>
+2|677888899<br>
+3|00111122234<br>
+3|5568899<br>
+4|011122224444<br>
+4|55566677788888<br>
+5|0012</p>
+</font><font SIZE="2">
+
+<p>&nbsp;</p>
+</font><b>
+
+<p ALIGN="JUSTIFY">Actividad 5. Diferencias en la tasa de natalidad </b>Una vez estudiada
+globalmente la tasa de natalidad podemos dividir a la clase en grupos para estudiar si la
+tasa de natalidad es la misma en los diferentes grupos de países. Los alumnos obtendrían
+las gráficas presentada en la Figura 5. Se puede investigar qué grupos de países tienen
+valores atípicos para la tasa de natalidad y cuáles países tienen una tasa de natalidad
+atípica respecto a su grupo así como analizar por qué al realizar un gráfico global en
+todo el fichero no aparecen valores atípicos y sí aparecen dentro de los grupos. Los
+alumnos pueden listar todas las diferencias observadas en los diversos grupos de países.</p>
+<b>
+
+<p ALIGN="CENTER">Figura 5</b>. <i>Distribución de la tasa de natalidad en los diferentes
+grupos de países</p>
+<font SIZE="2">
+
+<p></font></i><em><font size="3">Gráfico del tallo y hojas: Países del Grupo 1</font></em><font FACE="Courier New" SIZE="2"></p>
+
+<p></font><font size="3" face="Courier New"><em>1|1<br>
+1|22333<br>
+1|445<br>
+1|7</em></font><font FACE="Courier New" SIZE="2"></p>
+
+<p></font><font size="3" face="Courier New"><em>HI|24.7</em></font><font FACE="Courier New" SIZE="2"></p>
+
+<p></font><font size="3" face="Times New Roman"><i>Gráfico del tallo y hojas: Países del
+Grupo 2</i></font><font SIZE="2" face="Times New Roman"><big> </big></font><font SIZE="2"></p>
+</font><font size="3"><font FACE="Courier New" SIZE="2">
+
+<p></font><em><font size="3" face="Courier New">1|</font><font face="Courier New">8</font><font size="3" face="Courier New"><br>
+</font><font face="Courier New">2</font><font size="3" face="Courier New">|</font><font face="Courier New">03</font><font size="3" face="Courier New"><br>
+</font><font face="Courier New">2</font><font size="3" face="Courier New">|</font><font face="Courier New">77889</font><font size="3" face="Courier New"><br>
+</font><font face="Courier New">3</font><font size="3" face="Courier New">|</font><font face="Courier New">224</font></em><font FACE="Courier New" SIZE="2"></p>
+
+<p></font><em><font size="3" face="Courier New">HI|</font><font face="Courier New">46.6</font></em><font FACE="Courier New" SIZE="2"></p>
+</font><i>
+
+<p><font face="Times New Roman">Gráfico del tallo y hojas: Países del Grupo 3</font></i></p>
+
+<p><i><font face="Times New Roman">0|99<br>
+1|1111<br>
+1|222<br>
+1|3333<br>
+1|4444<br>
+1|5<br>
+1|6</font></i></p>
+<i>
+
+<p><font face="Times New Roman">Gráfico del tallo y hojas: Países del Grupo 4</font></i></p>
+
+<p><i><font face="Times New Roman">2|22<br>
+2|689<br>
+3|1<br>
+3|8<br>
+4|222<br>
+4|5<br>
+</font></i></p>
+
+<p><font face="Times New Roman"><i>Gráfico del tallo y hojas: Países del Grupo 5 </i> </font></p>
+
+<p><i><font face="Times New Roman">1|1<br>
+1|7<br>
+2|1123<br>
+2|8<br>
+3|00113<br>
+3|69<br>
+4|012</font></i></p>
+
+<p><i><font face="Times New Roman">Gráfico del tallo y hojas: Países del Grupo 6</font></i></p>
+</font><b>
+
+<p ALIGN="JUSTIFY"></b><em>LO|31.1</em></p>
+
+<p ALIGN="JUSTIFY"><em>3|<br>
+3|<br>
+3|2<br>
+3|55<br>
+3|<br>
+3|89<br>
+4|1<br>
+4|<br>
+4|444455<br>
+4|66777<br>
+4|88888<br>
+5|001<br>
+5|2<br>
+</em></p>
+
+<p ALIGN="JUSTIFY"><b><img SRC="Image12.gif" WIDTH="646" HEIGHT="180"></b> </p>
+
+<p ALIGN="JUSTIFY">El gráfico de tallo y hojas ha sido útil para analizar las
+diferencias en la tasa de natalidad, pero también podemos usar otras representaciones,
+como diagramas de puntos y gráficos de caja. Divididos en grupos, los alumnos pueden
+tratar de hallar representaciones alternativas que pongan de manifiesto las diferencias en
+la tasa de natalidad. Por ejemplo, podemos observar las Figuras 6 y 7 y comparar con los
+gráficos del tronco de la Figura 5, señalando las ventajas tiene cada una de las
+representaciones gráficas y cómo podríamos cambiar cada gráfica para resaltar más
+(menos) las diferencias. </p>
+<b>
+
+<p><img SRC="Image13.gif" WIDTH="639" HEIGHT="179"></p>
+
+<p ALIGN="JUSTIFY">Actividad 6. Esperanza de vida en hombres y mujeres.</b>: En la
+actividad anterior hemos comparado una variable en distintos subconjuntos de países, pero
+a veces tiene también sentido comparar dos variables diferentes en el total de los datos.
+Se dice, por ejemplo, que las mujeres forman el sexo débil. Sin embargo muchas chicas
+estarían en contra de esta opinión cuando comparen en algunos países la esperanza de
+vida al nacer en hombres y mujeres. Podríamos investigar si distribución de la esperanza
+de vida en el total de países es igual en hombres y mujeres analizando para ellos los
+gráficos de las figuras 8, 9 y 10 y contestar preguntas como las siguientes: ¿Hay mayor
+variabilidad entre países en la esperanza de vida en hombres o en mujeres? ¿En qué
+porcentaje de países la esperanza de vida de hombres (mujeres) es mayor de 58 años? ¿ y
+de 68 años? ¿Cuál es el valor de la esperanza de vida de modo que el 70 por ciento de
+países tiene una esperanza de vida mayor? ¿Es igual en hombres y mujeres? ¿Cómo
+podrías disimular la diferencia de esperanzas de vida en hombres y mujeres en cada
+gráfico?</p>
+
+<p ALIGN="JUSTIFY">&nbsp;</p>
+<b>
+
+<p ALIGN="JUSTIFY"><img SRC="Image14.gif" WIDTH="639" HEIGHT="164"></b><i></p>
+</i>
+
+<p ALIGN="JUSTIFY"><b>Figura 8</b>. <i>Gráficos de caja. Distribución de la esperanza de
+vida en hombres y mujeres</i></p>
+<b>
+
+<p ALIGN="CENTER"><img SRC="Image15.gif" WIDTH="639" HEIGHT="180"></b><i></p>
+</i>
+
+<p ALIGN="CENTER"><b>Figura 9</b>. <i>Histogramas. Distribución de la esperanza de vida
+en hombres y mujeres</i></p>
+<b>
+
+<dir>
+  <dir>
+    <p ALIGN="JUSTIFY"><img SRC="Image16.gif" WIDTH="639" HEIGHT="203"> Figura 10</b><i>. Gráfico de cuantiles.
+    Distribución acumulativa de la esperanza de vida en hombres y mujeres</p>
+    </i><b><p ALIGN="JUSTIFY">&nbsp;</p>
+  </dir>
+</dir>
+
+<p ALIGN="JUSTIFY">Actividad 7. Relación de la esperanza de vida con otras variables. </b>En
+la Figura 11 hemos representado los diagramas de dispersión de la esperanza de vida del
+hombre en cada país, en función de diversas variables. Podemos proponer a los alumnos
+las siguientes preguntas:<b> </b>¿Cuál de las variables influye en la esperanza de vida
+del hombre? ¿Cuáles son influidas por la esperanza de vida? ¿Cuáles hacen crecer /
+disminuir la esperanza de vida? ¿Cuál de ella sirve mejor para predecir la esperanza de
+vida? ¿En qué casos la relación es directa/ indirecta? ¿En qué casos la relación es
+causal? ¿Es debida a otras variables? ¿Podríamos en alguno de los casos hallar una
+función matemática para predecir, aproximadamente la esperanza de vida del hombre a
+partir de la otra variable? ¿Qué tipo de función?</p>
+<font SIZE="2">
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+<b>
+
+<p ALIGN="CENTER">Figura 11</b>. <i>Relación de la esperanza de vida del hombre con otras
+variables</p>
+</i><b>
+
+<p ALIGN="CENTER"><img SRC="Image17.gif" WIDTH="447" HEIGHT="215"></p>
+</font>
+
+<p ALIGN="CENTER"><img SRC="Image18.gif" WIDTH="428" HEIGHT="182"><img SRC="Image19.gif" WIDTH="440" HEIGHT="215"><img SRC="Image20.gif" WIDTH="426" HEIGHT="182"></p>
+
+<p ALIGN="CENTER"><img SRC="Image21.gif" WIDTH="433" HEIGHT="215"></p>
+
+<p ALIGN="CENTER">2. Algunas reflexiones didácticas</p>
+</b>
+
+<p ALIGN="JUSTIFY">En una enseñanza tradicional nos enfocamos en la resolución de
+problemas acotados con unos datos dados por el profesor. En el enfoque exploratorio los
+alumnos pueden investigar y obtener sus propios datos o completar los dados por el
+profesor. Los ficheros contenidos en Internet, los anuarios estadísticos, la prensa, o
+los datos recogidos por los alumnos (mediante medición, encuesta u observación) pueden
+ser la base para plantear problemas que motiven a los alumnos y les haga interesarse por
+el aprendizaje.<font SIZE="2"> </font>Los ordenadores actuales brindan muchas
+posibilidades para la enseñanza y el aprendizaje de la estadística (Godino, 1995;
+Biehler, 1997), desde paquetes profesionales o paquetes didácticos a las simples hojas
+electrónicas que se suministran habitualmente como parte del sofware de uso general. El
+análisis exploratorio de datos puede también implementarse con las calculadoras
+gráficas o dividiendo la clase en equipos para repartir el trabajo de cálculo y la
+realización de los gráficos.</p>
+
+<p ALIGN="JUSTIFY">Un punto muy importante es la discusión de las variables y el problema
+de la medición. Es preciso concienciar a los alumnos de la dificultad que reviste el
+proceso de categorización o de medición, porque la realidad es siempre más compleja que
+nuestros métodos para estudiarla. La toma de conciencia sobre la complejidad del proceso
+de elaboración de las estadísticas demográficas o económicas es un paso importante
+para valorar el trabajo del estadístico y fomentar la cooperación en censos y encuestas.
+El trabajo con un fichero completo, en lugar de centrarse en variables aisladas supone el
+inicio de una filosofía multivariante donde cada variable cobra su importancia o bien es
+explicada en función del resto y donde el alumno puede tratar de comprobar sus conjeturas
+con la incorporación de nuevas variables al estudio.</p>
+
+<p ALIGN="JUSTIFY">El primer paso en el análisis es el estudio de cada variable, la
+tabulación y representación gráfica. Algunos investigadores han analizado los
+diferentes niveles de comprensión de las gráficas (Curcio, 1989).y las dificultades de
+los alumnos en la elaboración de las mismas o la selección de un gráfico adecuado,
+debido a la diferente información que aportan las diferentes gráficas estadísticas (Li
+y Shen, 1992). Deberíamos también fomentar en los alumnos un sentido gráfico que les
+haga ser críticos frente a los posibles gráficos tendenciosos que con frecuencia
+encontramos en los medios de comunicación.</p>
+
+<p ALIGN="JUSTIFY">En este fichero las unidades estadísticas son agregados, lo que tiene
+repercusión en la interpretación de los promedios de las variables; por ejemplo la media
+(simple) de todas las esperanzas de vida al nacer en los distintos países no es igual a
+la esperanza global de vida, sino que esta tiene que ser calculada como una media
+ponderada en función del número de hombres / mujeres de cada país. Esto puede servir de
+reflexión sobre las diferentes unidades estadísticas que pueden usarse en un estudio, la
+necesidad que a veces tenemos de trabajar con valores aproximados y la forma de combinar
+estudios parciales para obtener índices globales, así como para reflexionar sobre las
+propiedades de los promedios y la comprensión de las mismas por parte de los estudiantes
+(Tormo, 1995). Esta misma observación debe hacerse en la interpretación de otros
+estadísticos, como los de dispersión o los coeficientes de correlación.</p>
+
+<p ALIGN="JUSTIFY">Junto con las representación gráficas tradicionales, como diagramas
+de barras o histogramas, en análisis exploratorio de datos aparecen nuevas
+representaciones como el diagrama de tallo y hojas o los gráficos de cajas, cuya potencia
+exploratoria se acentúa con el paso de una a otra representación, así como la
+selección de partes del fichero para realizar estudios comparativos, por ejemplo al
+comparar las variables en los distintos grupos de países. El interés no sólo se centra
+en las tendencias, sino en la variabilidad, así como el estudio de los valores atípicos.
+Vemos también como la idea de distribución siempre es relativa a un colectivo; por eso
+un valor puede ser atípico dentro de un subconjunto de datos y no serlo en el global. </p>
+
+<p ALIGN="JUSTIFY">El trabajo con análisis exploratorio de datos refuerza también
+algunos objetivos sugeridos para la educación matemática en los nuevos currículos de
+secundaria, como el trabajo con problemas abiertos, el uso de sistemas múltiples de
+representación, la introducción al trabajo con ordenadores o calculadoras gráficas y la
+conexión de las matemáticas con otras áreas del currículo (Shaughnessy, Garfield y
+Greer, 1997). Pero el razonamiento estadístico va más allá del conocimiento matemático
+y de la comprensión de los conceptos y procedimientos. La modelización, la valoración
+de la bondad del ajuste de los modelos a la realidad, la formulación de cuestiones, la
+interpretación y síntesis de los resultados, la elaboración de informes son también
+componentes esenciales de las capacidades que queremos desarrollar en nuestros alumnos. </p>
+
+<p ALIGN="JUSTIFY">Al analizar las relaciones entre dos variables numéricas los alumnos
+deben de extender la idea de dependencia funcional a dependencia aleatoria y diferenciar
+sus tipos (lineal o no; directa e inversa) así como graduar al menos intuitivamente la
+intensidad de la relación. Es importante también diferenciar correlación y causalidad y
+analizar los distintos tipos de relaciones que pueden llevar a la existencia de
+correlación: dependencia causal; interdependencia, dependencia indirecta, concordancia y
+correlación espúrea (Estepa, 1995). Una vez detectada la correlación, el interés se
+centra en la búsqueda de modelos que puedan predecir las variables explicadas en función
+de las variables explicativas, lo que de nuevo conecta con otro contenido del currículo
+de matemáticas: las funciones.</p>
+
+<p ALIGN="JUSTIFY">Finalmente es preciso reconocer que la enseñanza de la estadística es
+una tarea delicada, debido a la dificultad que revisten los conceptos estadísticos
+incluso los más sencillos (Batanero y cols., 1994). Es por ello de agradecer la
+oportunidad que esta Conferencia brinda de compartir recursos y experiencias y de
+establecer contactos para el trabajo futuro.</p>
+
+<p>&nbsp;</p>
+<b>
+
+<p>Referencias: 
+
+<dir>
+  <dir>
+    </b><p ALIGN="JUSTIFY">Batanero, C., Estepa, A. y Godino, J. D. (1992). Análisis
+    exploratorio de datos: Sus posibilidades en la enseñanza secundaria. <i>Suma, </i>9,
+    25-31.</p>
+    <p ALIGN="JUSTIFY">Batanero, C., Godino, J. D., Vallecillos, A., Green, D. R. y Holmes, P.
+    (1994). Errors and difficulties in understanding statistical concepts. <i>International
+    Journal of Mathematics Education in Science and Technology, </i>25(4), 527-547.</p>
+    <p ALIGN="JUSTIFY">Biehler, R. (1997). Software for learning and for doing statistics. <i>International
+    Statistical Review</i>, 65(2), 167-190.</p>
+    <p ALIGN="JUSTIFY">Day, A. (ed.) (1992), <i>The Annual Register 1992</i>, 234,
+    London:Longmans.</p>
+    <p ALIGN="JUSTIFY">Curcio, F. R. (1989). <i>Developing graph comprehension. </i>Reston,
+    VA: N.C.T.M. </p>
+    <p ALIGN="JUSTIFY">Estepa, A. (1995). Las tablas de contingencia y su enseñanza. ¿Qué
+    podemos aprender de las investigaciones realizadas?<i> UNO</i>, 3. 89-100.</p>
+    <p ALIGN="JUSTIFY">Godino, J. D. (1995). ¿Qué aportan los ordenadores a la enseñanza y
+    aprendizaje de la estadística? <i>UNO</i>, 5, 45-55.</p>
+    <p ALIGN="JUSTIFY">Li, K. Y. y Shen, S. M. (1992). Students' weaknesses in statistical
+    projects. <i>Teaching Statistics</i>, 14 (1), 2-8. </p>
+    <p ALIGN="JUSTIFY">Tormo, C. (1995). Dificultades del alumnado respecto a la media
+    aritmética. <i>UNO, </i>5, 29-36.</p>
+    <p ALIGN="JUSTIFY">Rouncenfield (1995). The statistics of poverty and inequality<i>.
+    Journal of Statistics Education, </i>3(2).</p>
+    <p ALIGN="JUSTIFY">Tukey, J. W. (1962). The future of data analysis. <i>Annals of
+    Mathematical Statistics, </i>33, 1-67.</p>
+    <p ALIGN="JUSTIFY">Tukey, J. W. (1970). <i>Exploratory data analysis. </i>New York:
+    Addison Wesley.</p>
+    <p ALIGN="JUSTIFY">U.N.E.S.C.O. <i>1990 Demographic Year Book. </i>New York: United
+    Nations.</p>
+    <p ALIGN="JUSTIFY">Shaughnessy, J. M., Garfield, J., &amp; Greer, B. (1996). Data
+    handling. En A. Bishop et al. (Eds.), <i>International handbook of mathematics education </i>(v.1,
+    pp. 205-237).<i> </i>Dordrecht: Kluwer, A. P.</p>
+  </dir>
+</dir>
+</body>
+</html>
