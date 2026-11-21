@@ -1,7 +1,7 @@
 ATUALIZAÇÃO DO ACERVO — CONFERÊNCIA INTERNACIONAL DE 1999
 
 1. Abra a pasta local do repositório acervo-educacao-estatistica-1999.
-2. Substitua index.html, styles.css e app.js pelos arquivos desta atualização.
+2. Substitua index.html e a pasta assets pelos arquivos desta atualização.
 3. Substitua a pasta acervo-original pela pasta acervo-original desta atualização.
 4. Copie inventario-imagens.csv para a raiz do repositório.
 5. Não apague a pasta downloads que já existe no seu repositório.
