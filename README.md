@@ -25,15 +25,22 @@ Há uma divergência documental que deve ser preservada: as páginas das atas el
 
 O artigo de Cazorla, Silva, Vendramini e Brito, **“Adaptação e Validação de uma Escala de Atitudes em Relação à Estatística”**, está no arquivo `acervo-original/pasta1/art5.html`. Algumas referências secundárias posteriores apontam para `art3.html`, mas a fonte primária recuperada mostra que `art3.html` corresponde ao trabalho **“O ensino da estocástica: uma linha emergente de pesquisa do grupo PRAPEM”**.
 
-## Publicação no GitHub Pages
+## Publicação
 
-1. Crie um repositório no GitHub.
-2. Envie todo o conteúdo desta pasta para a raiz do repositório.
-3. Em **Settings → Pages**, escolha **Deploy from a branch**.
-4. Selecione a branch `main` e a pasta `/ (root)`.
-5. Salve. O GitHub publicará o `index.html`.
+O site é estático e não exige compilação. Ele está publicado em três endereços:
 
-Não é necessário Node.js, banco de dados ou etapa de compilação.
+- **GitHub Pages** — <https://gerlansilva.github.io/acervo-educacao-estatistica-1999/> (publica automaticamente a cada `push` na branch `main`, a partir da raiz do repositório);
+- **Cloudflare Pages** — <https://cieee-6xv.pages.dev/> (publicação manual com `./deploy-cloudflare.sh`);
+- **Netlify** — <https://cieee-acervo.netlify.app/> (endereço anterior).
+
+Para publicar no Cloudflare Pages:
+
+```bash
+npx wrangler login   # apenas na primeira vez
+./deploy-cloudflare.sh
+```
+
+O script monta uma pasta temporária apenas com o que o site usa, envia para o projeto `cieee` e publica na branch `main`.
 
 ## Curadoria
 
