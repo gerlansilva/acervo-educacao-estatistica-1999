@@ -30,17 +30,17 @@ O artigo de Cazorla, Silva, Vendramini e Brito, **“Adaptação e Validação d
 O site é estático e não exige compilação. Ele está publicado em três endereços:
 
 - **GitHub Pages** — <https://gerlansilva.github.io/acervo-educacao-estatistica-1999/> (publica automaticamente a cada `push` na branch `main`, a partir da raiz do repositório);
-- **Cloudflare Pages** — <https://cieee-6xv.pages.dev/> (publicação manual com `./deploy-cloudflare.sh`);
+- **Cloudflare Pages** — <https://ciee1999.pages.dev/> (publica automaticamente a cada `push` na branch `main`);
 - **Netlify** — <https://cieee-acervo.netlify.app/> (endereço anterior).
 
-Para publicar no Cloudflare Pages:
+O Cloudflare Pages está conectado ao repositório do GitHub e reconstrói o site sozinho a cada `push`. Se precisar publicar sem passar pelo GitHub:
 
 ```bash
 npx wrangler login   # apenas na primeira vez
 ./deploy-cloudflare.sh
 ```
 
-O script monta uma pasta temporária apenas com o que o site usa, envia para o projeto `cieee` e publica na branch `main`.
+O script monta uma pasta temporária apenas com o que o site usa e envia para o projeto `ciee1999`.
 
 ## Curadoria
 

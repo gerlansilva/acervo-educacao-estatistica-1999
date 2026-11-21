@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-# Publica o acervo no Cloudflare Pages (projeto "cieee").
+# Publicação manual (alternativa ao deploy automático via GitHub).
+# Publica o acervo no Cloudflare Pages, projeto "ciee1999".
 # Uso: ./deploy-cloudflare.sh
 set -euo pipefail
 cd "$(dirname "$0")"
@@ -19,6 +20,6 @@ rsync -a \
   ./ "$stage"/
 
 npx --yes wrangler@latest pages deploy "$stage" \
-  --project-name cieee \
+  --project-name ciee1999 \
   --branch main \
   --commit-dirty=true
