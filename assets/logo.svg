@@ -1,14 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="Educação Estatística 1999">
-  <rect width="48" height="48" rx="11" fill="#1A1A18"/>
-  <g fill="#FCFCFA">
-    <rect x="7" y="14" width="4" height="20"/>
-    <rect x="7" y="14" width="15" height="4"/>
-    <rect x="7" y="22" width="11" height="4"/>
-    <rect x="7" y="30" width="15" height="4"/>
-    <rect x="26" y="14" width="4" height="20"/>
-    <rect x="26" y="14" width="15" height="4"/>
-    <rect x="26" y="22" width="11" height="4"/>
-    <rect x="26" y="30" width="15" height="4"/>
-  </g>
-  <rect x="26" y="22" width="11" height="4" fill="#8FBF9A"/>
+<svg viewBox="0 0 120 58" fill="none" aria-hidden="true">
+<path d="M3 48H117" stroke="currentColor" stroke-width="3.4" stroke-linecap="round"/>
+<path d="M3 48C14.9 29.3 28.2 14 38 14C47.7 14 42 31 60 31C78 31 72.3 14 82 14C91.8 14 105.1 29.3 117 48" stroke="currentColor" stroke-width="3.4" stroke-linecap="round"/>
+<path d="M12 34.9V48" stroke="currentColor" stroke-width="1.4" opacity="0.55"/>
+<path d="M21 24.3V48" stroke="currentColor" stroke-width="1.4" opacity="0.55"/>
+<path d="M30 16.7V48" stroke="currentColor" stroke-width="1.4" opacity="0.55"/>
+<path d="M45.2 21V48" stroke="currentColor" stroke-width="1.4" opacity="0.55"/>
+<path d="M54.2 30.2V48" stroke="currentColor" stroke-width="1.4" opacity="0.55"/>
+<path d="M67.2 29.7V48" stroke="currentColor" stroke-width="1.4" opacity="0.55"/>
+<path d="M76.2 18V48" stroke="currentColor" stroke-width="1.4" opacity="0.55"/>
+<path d="M91 17.4V48" stroke="currentColor" stroke-width="1.4" opacity="0.55"/>
+<path d="M100 25.3V48" stroke="currentColor" stroke-width="1.4" opacity="0.55"/>
+<path d="M109 36.3V48" stroke="currentColor" stroke-width="1.4" opacity="0.55"/>
+<path d="M33.5 48V5M42.5 48V5" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/>
+<path d="M31.9 5H44.1" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/>
+<path d="M33.5 23.1H42.5" stroke="currentColor" stroke-width="1.4" opacity="0.45"/>
+<path d="M33.5 31.2H42.5" stroke="currentColor" stroke-width="1.4" opacity="0.45"/>
+<path d="M33.5 39.4H42.5" stroke="currentColor" stroke-width="1.4" opacity="0.45"/>
+<path d="M77.5 48V5M86.5 48V5" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/>
+<path d="M75.9 5H88.1" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/>
+<path d="M77.5 23.1H86.5" stroke="currentColor" stroke-width="1.4" opacity="0.45"/>
+<path d="M77.5 31.2H86.5" stroke="currentColor" stroke-width="1.4" opacity="0.45"/>
+<path d="M77.5 39.4H86.5" stroke="currentColor" stroke-width="1.4" opacity="0.45"/>
 </svg>
