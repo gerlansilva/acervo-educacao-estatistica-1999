@@ -27,9 +27,8 @@ O artigo de Cazorla, Silva, Vendramini e Brito, **“Adaptação e Validação d
 
 ## Publicação
 
-O site é estático e não exige compilação. Ele está publicado em três endereços:
+O site é estático e não exige compilação. Ele está publicado em:
 
-- **GitHub Pages** — <https://gerlansilva.github.io/acervo-educacao-estatistica-1999/> (publica automaticamente a cada `push` na branch `main`, a partir da raiz do repositório);
 - **Cloudflare Pages** — <https://ciee1999.pages.dev/> (publica automaticamente a cada `push` na branch `main`);
 - **Netlify** — <https://cieee-acervo.netlify.app/> (endereço anterior).
 
